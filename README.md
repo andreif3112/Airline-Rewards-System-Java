@@ -21,8 +21,9 @@ This Java project highlights the use of data structures (HashMaps), inheritance,
 <b>Specifications</b>
 <br>
 <pre>
-Reward Tiers, based on miles earned / flights cancelled within a single year:
+File input: A text/.txt file called "flight-data.txt" containing flight passenger data is preloaded in the Main.java. More information about the file can be found in the <a href="https://github.com/andreif3112/Airline-Rewards-System/edit/main/README.md#text-file-contents">Text File Contents section</a>.
 <br>
+<b>Reward Tiers</b>, based on miles earned / flights cancelled within a single year:
 <li><b>Gold</b>: 25 flight cancellations. Each cancellation is worth 1000 miles.
 <li><b>Platinum</b>: 50 flight cancellations. Each cancellation is worth 1000 miles.
 <li><b>Platinum Pro</b>: A special sub-tier of Platinum, reserved for those passengers with the mileage multiplier. This will earn double the miles per cancelled flight (2000 miles) for passengers who did not complain about flight cancellations at all throughout the year.
