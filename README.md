@@ -1,33 +1,42 @@
-
 <h1>Airline-Rewards-System</h1>
 
-This project parses a text/.txt file containing flight passenger information and determines what airline tier that passenger belongs to.
-<br><br>
+<p align="center">
+   <img src="assets/sky-plane-256.gif" alt="Plane flying"/>
+</p>
+<p align="center">
+   <a href="https://pixabay.com/gifs/plane-aviator-vacation-airplane-83/" target="_blank">GIF Credits</a>
+</p>
 
 <details open>
 <summary>
-   <b>About the Project (Background, Purpose)</b>
+   <h3>About (Project Background & Specifications)</h3>
 </summary>
 <br>
-This is an academic project that highlights the use of data structures (HashMaps), inheritance, polymorphism, abstraction, encapsulation, and error handling.
+<b>Background</b>
+<br>
+This is academic project that calculates the rewards for passengers based on their number of miles flown and flights cancelled within a single year.
+This Java project highlights the use of data structures (HashMaps), inheritance, polymorphism, abstraction, interfaces, encapsulation, and error handling.
+<br>
+<br>
+<b>Specifications</b>
+<br>
+<pre>
+Reward Tiers, based on miles earned / flights cancelled within a single year:
+<br>
+<li><b>Gold</b>: 25 flight cancellations. Each cancellation is worth 1000 miles.
+<li><b>Platinum</b>: 50 flight cancellations. Each cancellation is worth 1000 miles.
+<li><b>Platinum Pro</b>: A special sub-tier of Platinum, reserved for those passengers with the mileage multiplier. This will earn double the miles per cancelled flight (2000 miles) for passengers who did not complain about flight cancellations at all throughout the year.
+<li><b>Executive Platinum</b>: 100 flight cancellations. Each cancellation is worth 1000 miles.
+<li><b>Super Executive Platinum</b>: A special sub-tier of Executive Platinum, reserved for those passengers with the mileage multiplier. This will earn double the miles per cancelled flight (2000 miles) for passengers who did not complain about flight cancellations at all throughout the year.
+</pre>
 <br><br>
 </details>
-
-
-
-
-<details>
-<summary>
-   <b>Project Info (How it Works)</b>
-</summary>   
-</details>
-
 
 
 
 <details open>
 <summary> 
-   <b>How to Run the Program</b> 
+   <h3>How to Run the Program </h3> 
 </summary>
 
 <pre>
@@ -53,7 +62,7 @@ This is an academic project that highlights the use of data structures (HashMaps
 
 <details>
 <summary>
-   <b>Text File Contents</b>
+   <h3>Text File Contents</h3>
 </summary>
    
 <pre>
@@ -66,7 +75,9 @@ The Passenger ID is a 3-digit number to represent the ID of the passenger.
 The Flight Cancelled is a 'Y' or 'N' character to represent "Yes" or "No" respectively to answer the question of if a flight was cancelled or not.
 The Passenger Complained is a 'Y' or 'N' character to represent "Yes" or "No" respectively to answer the question of if the passenger complained to a <b>CANCELLED</b> flight.<br><br>
 <b>Important Notes about File Contents:</b>
-<ul><li>Notice that if a flight was not cancelled (denoted as 'N' in the second field), there is no third field for if the passenger complained or not.</li><li>The file <b>IS</b> supposed to contain duplicate lines. This determines if a passenger belongs in a tier (Gold, Platinum, Platinum Pro, Executive Platinum, Super Executive Platinum) or not (ConcreteTier).</li></ul></pre>
+<li>Notice that if a flight was not cancelled (denoted as 'N' in the second field), there is no third field for if the passenger complained or not.
+<li>The file <b>IS</b> supposed to contain duplicate lines. This determines if a passenger belongs in a tier (Gold, Platinum, Platinum Pro, Executive Platinum, Super Executive Platinum) or not (ConcreteTier).
+</pre>
 <br><br>
 </details>
 
@@ -75,6 +86,6 @@ The Passenger Complained is a 'Y' or 'N' character to represent "Yes" or "No" re
 
 <details open>
 <summary>
-   <b>Demo</b>
+   <h3>Demo</h3>
 </summary>   
 </details>
