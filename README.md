@@ -121,6 +121,9 @@ total flight cancellations for the year, and if the passenger has earned the mul
 The output method in the Passenger object uses the fields in the Passenger object for output.
 <br>
 <b>Actual Demo</b>
+<p align="center">
+   <a href="assets/screenrecord-noaudio1.mov">Video</a>
+</p>
 </pre>
 </details>
 
