@@ -7,21 +7,25 @@
    <a href="https://pixabay.com/gifs/plane-aviator-vacation-airplane-83/" target="_blank">GIF Credits</a>
 </p>
 
+This is an academic project that is essentially a rewards program for passengers who have stayed loyal to an airline.
+<br>
+It is written in Java and includes data structures (HashMaps), inheritance, polymorphism, abstraction, interfaces, encapsulation, error handling, and heavy documentation (code comments!).
 <details open>
 <summary>
-   <h3>About (Project Background & Specifications)</h3>
+   <h3>About (Project Summary & Specifications)</h3>
 </summary>
 <br>
-<b>Background</b>
-<br>
-This is academic project that calculates the rewards for passengers based on their number of miles flown and flights cancelled within a single year.
-This Java project highlights the use of data structures (HashMaps), inheritance, polymorphism, abstraction, interfaces, encapsulation, and error handling.
+<b>Summary</b><br>
+This project determines the rewards tier for passengers based on their number of accumulated miles (larger amount of accumulated miles = higher rewards tier); the number of accumulated miles is determined
+by the number of cancelled flights a passenger had within a single year -- each cancelled flight is initially worth 1000 miles.<br>Moreover, if a passenger never complained after having multiple cancelled flights for the ENTIRE year, they earn the mileage multiplier, which doubles the number of accumulated miles for a single flight cancellation (1000 miles --> 2000 miles per each cancelled flight).
 <br>
 <br>
 <b>Specifications</b>
 <br>
 <pre>
-File input: A text/.txt file called "flight-data.txt" containing flight passenger data is preloaded in the Main.java. More information about the file can be found in the <a href="https://github.com/andreif3112/Airline-Rewards-System/edit/main/README.md#text-file-contents">Text File Contents section</a>.
+<b>File input</b>:
+A text/.txt file called "flight-data.txt" containing flight passenger data is preloaded in the Main.java.
+More information about the file can be found in the Text File Contents section.
 <br>
 <b>Reward Tiers</b>, based on miles earned / flights cancelled within a single year:
 <li><b>Gold</b>: 25 flight cancellations. Each cancellation is worth 1000 miles.
@@ -29,6 +33,9 @@ File input: A text/.txt file called "flight-data.txt" containing flight passenge
 <li><b>Platinum Pro</b>: A special sub-tier of Platinum, reserved for those passengers with the mileage multiplier. This will earn double the miles per cancelled flight (2000 miles) for passengers who did not complain about flight cancellations at all throughout the year.
 <li><b>Executive Platinum</b>: 100 flight cancellations. Each cancellation is worth 1000 miles.
 <li><b>Super Executive Platinum</b>: A special sub-tier of Executive Platinum, reserved for those passengers with the mileage multiplier. This will earn double the miles per cancelled flight (2000 miles) for passengers who did not complain about flight cancellations at all throughout the year.
+<br>
+<b>Mileage Multipler</b>:
+The flights are in no/random order (<b>not</b> chronological) in the file; the mileage multiplier is applied after the entire file is read (i.e., the multiplier is not applied while the program is still reading each line).
 </pre>
 <br><br>
 </details>
@@ -68,7 +75,8 @@ File input: A text/.txt file called "flight-data.txt" containing flight passenge
    
 <pre>
 Each line in the text file contains passenger and flight data.
-The data in each line is and <b>MUST</b> be structured in a certain way:
+The entire file contains data for a single year.
+The data in each line is and <b>MUST</b> be structured a certain way:
 <br>
 &emsp;&emsp;[Passenger ID]&emsp;<b>space</b>&emsp;[Flight Cancelled]&emsp;<b>space</b>&emsp; [Passenger Complained]
 <br>
@@ -77,7 +85,8 @@ The Flight Cancelled is a 'Y' or 'N' character to represent "Yes" or "No" respec
 The Passenger Complained is a 'Y' or 'N' character to represent "Yes" or "No" respectively to answer the question of if the passenger complained to a <b>CANCELLED</b> flight.<br><br>
 <b>Important Notes about File Contents:</b>
 <li>Notice that if a flight was not cancelled (denoted as 'N' in the second field), there is no third field for if the passenger complained or not.
-<li>The file <b>IS</b> supposed to contain duplicate lines. This determines if a passenger belongs in a tier (Gold, Platinum, Platinum Pro, Executive Platinum, Super Executive Platinum) or not (ConcreteTier).
+<li>The file <b>IS</b> supposed to contain duplicate lines.
+<li>The flights are in random order (<b>NOT</b> chronological); the mileage multiplier is applied after the entire file is read (i.e., the multiplier is not applied while the program is still reading each line).
 </pre>
 <br><br>
 </details>
@@ -88,5 +97,32 @@ The Passenger Complained is a 'Y' or 'N' character to represent "Yes" or "No" re
 <details open>
 <summary>
    <h3>Demo</h3>
-</summary>   
+</summary>
+<pre>
+<b>How the Program Works</b> (a bit condensed, but still lengthy explanation)
+The program involves reading each line.
+If a passenger ID exists in the HashMap as a key, then do not create a new Passenger object as the value; otherwise, 
+create a new Passenger object and set the object as the value and set the ID as the key -- Entries 
+that already exist in the HashMap are only updated.
+<br>
+Note, a passenger can complain the first time its ID is read in the program.
+<br>
+Each Passenger object has an ID field, complained field, and Tier interface field.
+The Tier interface has methods to increment cancelled and 
+non-cancelled flights, get the number of cancelled and non-cancelled flights, and get the number of miles from the 
+cancelledFlights field (cancelledFlights * 1000).
+<br>
+The ConcreteTier implements the Tier interface, and the other Tier classes inherit from ConcreteTier.
+The Tier classes that have the multiplier (Platinum Pro and Super Executive Platinum) override the getMiles() method
+for [cancelledFlights * 2000].
+<br>
+After the entire file is read, we can prompt the user to enter a passenger ID and display their information.
+A method for output in the Passenger object displays the tier, total miles accumulated for the year, 
+total flight cancellations for the year, and if the passenger has earned the multiplier.
+The output method in the Passenger object uses the fields in the Passenger object for output.
+<br>
+<b>Actual Demo</b>
+</pre>
 </details>
+
+<h4>Final Remark: There are many ways to design this program/solution, but this is one design that worked.</h4>
