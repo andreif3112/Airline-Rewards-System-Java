@@ -1,4 +1,4 @@
-<h1>Airline-Rewards-System</h1>
+<h1 align="center">Airline-Rewards-System</h1>
 
 <p align="center">
    <img src="assets/sky-plane-256.gif" alt="Plane flying"/>
