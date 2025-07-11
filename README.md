@@ -98,8 +98,8 @@ The Passenger Complained is a 'Y' or 'N' character to represent "Yes" or "No" re
 <summary>
    <h3>Demo</h3>
 </summary>
-<pre>
 <b>How the Program Works (a bit condensed, but still lengthy explanation)</b>
+<pre>
 The program involves reading each line from the file.
 If a passenger ID exists in the HashMap as a key, then do not create a new Passenger object as the value; else, 
 create a new Passenger object and set the object as the value and set the ID as the key -- Entries 
@@ -119,12 +119,13 @@ After the entire file is read, we can prompt the user to enter a passenger ID an
 A method for output in the Passenger object displays the tier, total miles accumulated for the year, 
 total flight cancellations for the year, and if the passenger has earned the multiplier.
 The output method in the Passenger object uses the fields in the Passenger object for output.
-<br>
+</pre>
 <b>Actual Demo</b>
 <p align="center">
-   <a href="assets/screenrecord-noaudio1.mov">Video</a>
+   
+   [![Watch the Demo](assets/diagonal-plane.gif)](https://www.youtube.com/watch?v=0RKj7tq0mGw)
+   
 </p>
-</pre>
 </details>
 
 <h4>Final Remark: There are many ways to design this program/solution, but this is one design that worked.</h4>
