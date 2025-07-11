@@ -99,20 +99,19 @@ The Passenger Complained is a 'Y' or 'N' character to represent "Yes" or "No" re
    <h3>Demo</h3>
 </summary>
 <pre>
-<b>How the Program Works</b> (a bit condensed, but still lengthy explanation)
-The program involves reading each line.
-If a passenger ID exists in the HashMap as a key, then do not create a new Passenger object as the value; otherwise, 
+<b>How the Program Works (a bit condensed, but still lengthy explanation)</b>
+The program involves reading each line from the file.
+If a passenger ID exists in the HashMap as a key, then do not create a new Passenger object as the value; else, 
 create a new Passenger object and set the object as the value and set the ID as the key -- Entries 
 that already exist in the HashMap are only updated.
 <br>
 Note, a passenger can complain the first time its ID is read in the program.
 <br>
-Each Passenger object has an ID field, complained field, and Tier interface field.
+Each Passenger object has an ID field, complained field, and ConcreteTier field.
+The ConcreteTier implements the Tier interface, and the other Tier classes inherit from ConcreteTier.
 The Tier interface has methods to increment cancelled and 
 non-cancelled flights, get the number of cancelled and non-cancelled flights, and get the number of miles from the 
 cancelledFlights field (cancelledFlights * 1000).
-<br>
-The ConcreteTier implements the Tier interface, and the other Tier classes inherit from ConcreteTier.
 The Tier classes that have the multiplier (Platinum Pro and Super Executive Platinum) override the getMiles() method
 for [cancelledFlights * 2000].
 <br>
