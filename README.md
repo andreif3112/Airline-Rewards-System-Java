@@ -7,7 +7,7 @@
    <a href="https://pixabay.com/gifs/plane-aviator-vacation-airplane-83/" target="_blank">GIF Credits</a>
 </p>
 
-This is an academic project that is essentially a rewards program for passengers who have stayed loyal to an airline.
+This academic project is a rewards program for passengers who have stayed loyal to an airline.
 <br>
 It is written in Java and includes data structures (HashMaps), inheritance, polymorphism, abstraction, interfaces, encapsulation, error handling, and heavy documentation (code comments!).
 <details open>
