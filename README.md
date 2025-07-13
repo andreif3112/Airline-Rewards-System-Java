@@ -123,7 +123,7 @@ The output method in the Passenger object uses the fields in the Passenger objec
 <b>Actual Demo</b>
 <p align="center">
    
-   [![Watch the Demo](assets/diagonal-plane.gif)](https://www.youtube.com/watch?v=0RKj7tq0mGw)
+   https://github.com/user-attachments/assets/717bd0b2-f30b-4f7b-8236-290117e9f4b2
    
 </p>
 </details>
