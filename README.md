@@ -120,7 +120,7 @@ A method for output in the Passenger object displays the tier, total miles accum
 total flight cancellations for the year, and if the passenger has earned the multiplier.
 The output method in the Passenger object uses the fields in the Passenger object for output.
 </pre>
-<b>Actual Demo</b>
+<b>Demo Video (Note: There is supposed to be no sound.)</b>
 <p align="center">
    
    https://github.com/user-attachments/assets/717bd0b2-f30b-4f7b-8236-290117e9f4b2
@@ -128,4 +128,4 @@ The output method in the Passenger object uses the fields in the Passenger objec
 </p>
 </details>
 
-<h4>Final Remark: There are many ways to design this program/solution, but this is one design that worked.</h4>
+<h4>Final Remark: There are many ways to design this solution/program, but this is one design that worked.</h4>
