@@ -4,12 +4,12 @@
    <img src="assets/sky-plane-256.gif" alt="Plane flying"/>
 </p>
 <p align="center">
-   <a href="https://pixabay.com/gifs/plane-aviator-vacation-airplane-83/" target="_blank">GIF Credits</a>
+   <a href="https://pixabay.com/gifs/plane-aviator-vacation-airplane-83/" target="_blank">GIF Source</a>
 </p>
 
 This academic project is a rewards program for passengers who have stayed loyal to an airline.
 <br>
-It is written in Java and includes data structures (HashMaps), inheritance, polymorphism, abstraction, interfaces, encapsulation, error handling, and heavy documentation (code comments!).
+It is written in Java and includes data structures (HashMaps), inheritance, polymorphism, abstraction, interfaces, encapsulation, error handling, and documentation.
 <details open>
 <summary>
    <h3>About (Project Summary & Specifications)</h3>
@@ -98,7 +98,7 @@ The Passenger Complained is a 'Y' or 'N' character to represent "Yes" or "No" re
 <summary>
    <h3>Demo</h3>
 </summary>
-<b>How the Program Works (a bit condensed, but still lengthy explanation)</b>
+<b>How the Program Works </b>
 <pre>
 The program involves reading each line from the file.
 If a passenger ID exists in the HashMap as a key, then do not create a new Passenger object as the value; else, 
@@ -128,4 +128,4 @@ The output method in the Passenger object uses the fields in the Passenger objec
 </p>
 </details>
 
-<h4>Final Remark: There are many ways to design this solution/program, but this is one design that worked.</h4>
+<h4>Final Remark: There are many alternate ways to design this solution/program, but this is one design that I came up with.</h4>
